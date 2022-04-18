@@ -9,7 +9,7 @@ namespace BlogWebApp.Controllers
         BlogManager bm = new BlogManager(new EfBlogRepository());
         public IActionResult Index()
         {
-            var values = bm.GetList();//Tüm değerleri döndürmek için.
+            var values = bm.GetBlogListWithCategory();//Tüm değerleri döndürmek için.
             return View(values);
         }
     }
