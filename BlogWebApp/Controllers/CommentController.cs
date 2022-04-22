@@ -17,10 +17,11 @@ namespace BlogWebApp.Controllers
         }
         public PartialViewResult CommentListByBlog(int id)
         {
-            var values = cm.GetList(id);
-			
-			
-                return PartialView(values);
+            
+            var values = cm.GetList(id);         
+             return PartialView(values);
+            
+             
             
            
         }
