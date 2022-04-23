@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class WriterManager : IWriterService 
+    public class WriterManager : IWriterService
     {
         IWriterDal _writerdal;
 
@@ -17,7 +17,6 @@ namespace BusinessLayer.Concrete
         {
             _writerdal = writerdal;
         }
-
         public void WriterAdd(Writer writer)
         {
             _writerdal.Insert(writer);
