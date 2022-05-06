@@ -3,9 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BlogWebApp.Controllers
 {
+    
     public class WriterController : Controller
     {
-        [Authorize]
+       [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
