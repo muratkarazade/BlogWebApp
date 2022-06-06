@@ -68,6 +68,7 @@ namespace BlogWebApp
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseAuthentication();
 
             app.UseSession();
 

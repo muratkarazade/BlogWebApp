@@ -6,7 +6,7 @@ namespace BlogWebApp.Controllers
     
     public class WriterController : Controller
     {
-       [AllowAnonymous]
+       
         public IActionResult Index()
         {
             return View();
@@ -18,6 +18,11 @@ namespace BlogWebApp.Controllers
         public IActionResult WriterMail()
         {
             return View(); 
+        }
+        [AllowAnonymous]
+        public IActionResult Test()
+        {
+            return View();
         }
     }
 }
